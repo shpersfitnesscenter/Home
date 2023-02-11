@@ -1,0 +1,208 @@
+/*==================Global settings===================================================================================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .4s ease-in-out;
+  font-family: 'Nunito', sans-serif;
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+}
+.a{
+  background: linear-gradient(50deg, mediumspringgreen, cyan);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+body {
+  background: #000;
+  color: #f1f1f1;
+}
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  body {
+    scrollbar-width: 5px;
+    scrollbar-color: mediumspringgreen #000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: #000;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: mediumspringgreen;
+    border-radius: 10px;
+    border: 3px solid #000;
+  }
+  @media (prefers-color-scheme: dark) {
+    html {
+      color-scheme: dark;
+    }
+  }
+  #PDF{
+    display: none;
+  }
+/*==================Styling Hearder section starts====================================================================================*/
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f1f1;
+  border-bottom: 0.1px solid silver;
+  padding: 10px;
+  z-index: 999;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 45px;
+  font-weight: 800;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.logo-img{
+  width: 45px;
+  height: 45px;
+  border-radius: 4px;
+}
+.button{
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: #1f1f1f;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.button:hover{
+  background: rgba(0,0,0,0.1);
+}
+p, label{
+  color: #f1f1f1;
+}
+input, textarea, select, option{
+  padding: 15px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+}
+.active{
+  padding: 10px 20px;
+  border-radius: 4px;
+  background: rgba(0,0,0,0.1);
+  color: #1f1f1f;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.active:hover{
+  background: rgba(0,0,0,0.3);
+}
+#hamburger{
+  padding: 10px 20px;
+  border-radius: 4px;
+  background: rgba(0,0,0,0.1);
+  color: #1f1f1f;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  display: none;
+}
+#hamburger:hover{
+  background: rgba(0,0,0,0.3);
+}
+.ico-menu{
+  width: 22px;
+  height: auto;
+  color: #000;
+}
+@media only screen and (max-width: 768px) {
+  .links{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: absolute;
+    top: 70px;
+    background: #f1f1f1;
+    backdrop-filter: blur(90px);
+    width: 40%;
+    right: 10px;
+    text-align: center;
+    display: none;
+    z-index: 999;
+  }
+  #hamburger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .acc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+  }
+  .active{
+    padding: 10px 10px;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .logo span{
+    display: none;
+  }
+}
+/*==================Styling Hearder section Ends====================================================================================*/
+.go-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  border: 0.1px solid rgba(0,0,0,0.3);
+  border-radius: 3px;
+  cursor: pointer;
+  color: #f1f1f1;
+  background: rgba(225,225,225,0.1);
+  z-index: 999;
+}
+.go-top:hover{
+  background: rgba(225,225,225,0.3);
+}
+.chat-support{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  position: fixed;
+  bottom: 90px;
+  right: 10px;
+  border: 0.1px solid rgba(0,0,0,0.3);
+  border-radius: 3px;
+  cursor: pointer;
+  color: #f1f1f1;
+  background: rgba(225,225,225,0.1);
+  z-index: 999;
+}
+.chat-support:hover{
+  background: rgba(225,225,225,0.3);
+}
+footer{
+  padding: 20px 20px;
+  background:#1f1f1f;
+  text-align: center;
+}
