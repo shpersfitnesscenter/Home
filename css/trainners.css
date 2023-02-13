@@ -1,0 +1,33 @@
+.trainner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:#000;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+.rightAbout{
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.rightAbout img{
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.joinus{
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .joinus{
+    width: 80%;
+  }
+}
