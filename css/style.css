@@ -127,6 +127,12 @@ input, textarea, select, option{
   height: auto;
   color: #000;
 }
+.acc{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
 @media only screen and (max-width: 768px) {
   .links{
     display: flex;
