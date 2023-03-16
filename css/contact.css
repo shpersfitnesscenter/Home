@@ -78,7 +78,8 @@ form{
     .MAINinfoadd{
         width: 80%;
         grid-template-columns: 1fr;
-        margin-top: -200px;
+        margin-top: -125px;
+}
     }
     .email, .phone{
         border: none;
